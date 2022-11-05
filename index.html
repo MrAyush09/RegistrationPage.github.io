@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Validation</title>
+    <link rel="stylesheet" href="front.css">
+
+</head>
+
+<body>
+    <h1 text align="center">Registration Form</h1>
+    <!-- <form aciton ="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post"> -->
+    <form aciton="/myaction.php" name='regeistration' onsubmit="return validateForm();" method="post">
+        <!-- fname And last name -->
+
+        <div class="row">
+            <div class="rColumn">
+                <label>First Name</label>
+            </div>
+            <div class="lColumn">
+                <label>Last Name</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="rColumn">
+                <input type="text" name="fname" ><span class="error" id="fname_error"></span>
+            </div>
+            <div class="lColumn">
+                <input type="text" name="lname"><span class="error" id="lname_error"></span>
+            </div>
+        </div>
+        <!-- email id and mbile no -->
+        <div class="row">
+            <div class="rColumn">
+                <label>Email Id</label>
+            </div>
+            <div class="lColumn">
+                <label>Mobile No</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="rColumn">
+                <input type="text" name="email" ><span class="error" id="email_error"></span>
+            </div>
+            <div class="lColumn">
+                <input type="text" name="phone"  maxlength="10" 
+                onkeyup="if (/\D/g.test(this.value)) this.value = this.value.replace(/\D/g,'')">
+                <span class="error" id="mobile_error"></span>
+            </div>
+        </div>
+        <br>
+        <!-- gender -->
+        <div class="gender row">
+            <label class="gender" id="gender">Gender</label>
+        </div>
+        <div class="sex row">
+            Male: <input type="radio" name="radio1" checked>
+                Female: <input type="radio" name="radio1" value="female">
+                Other: <input type="radio" name="radio1" value="other">
+        </div>
+        <div class="count row">
+            <label class="country" id="country">Country</label>
+        </div> 
+        <div class="coutry row">
+            <select name="country"><span class="error" id="country_error"></span>
+                <!-- <option selected="" value="">Choose...</option> -->
+                <option value="AF">Australia</option>
+                <option value="AL">Canada</option>
+                <option value="DZ">India</option>
+                <option value="AS">Russia</option>
+                <option value="AD">USA</option>
+                </select>
+        </div>
+        <div class="button row">
+            <input type="submit" name="submit" value="submit" />
+
+        </div>
+
+
+    </form>
+</body>
+<script src="front.js"></script>
+
+</html>

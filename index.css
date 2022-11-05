@@ -1,0 +1,62 @@
+
+.formdesign 
+{
+    font-size: 20px;
+ }
+.rColumn{
+    float: left;
+    margin-bottom: 5px;
+    width: 30%;
+    margin-left: 26%;
+   
+}
+.lColumn{
+    float: right;
+    margin-bottom: 5px;
+    width: 30%;
+    margin-right: 14%;
+}
+
+.count{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.coutry{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.rgColumn{
+text-align: left;  
+}
+.mgColumn{
+    text-align: center; 
+}
+.sex{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.lgColumn{
+    text-align: right;
+  
+}
+.gender{
+    text-align: center;
+    margin-bottom: 5px;
+}
+.radio{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.formerror
+{
+    color: red;
+}
+.button 
+{
+    text-align: center;
+}
+.error{
+    font-size: 12px;
+    color: red;
+}
